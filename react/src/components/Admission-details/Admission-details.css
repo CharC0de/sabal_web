@@ -1,0 +1,318 @@
+.admdet {
+    margin: 0;
+    padding-bottom: 50px;
+    background-image: url('../../images/doc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .admdet::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .admdet::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  .admdet::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .container-adet {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .content-container-adet {
+    margin-left: 70px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo-adet {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .logo-adet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .logout-link-adet {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .title-adet {
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #000000,
+      0 0 42px rgb(255, 255, 255),
+      0 0 82px rgb(255, 255, 255),
+      0 0 102px rgb(255, 255, 255);
+  }
+
+  .form-container-adet {
+    border: 2px black solid;
+    padding: 0 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    width: 207%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .treatment-advice-box-adet {
+    border: 2px black solid;
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 70%;
+    overflow: auto;
+  }
+
+  .input-group-adet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-label-adet {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .input-group-adet #rec {
+    font-weight: bold;
+  }
+
+  .buttons-adet {
+    display: flex;
+    margin-left: 220px;
+  }
+
+  .back-button-adet {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: courier;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .buttonfield-adet {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttonfield-adet .back-button-adet:hover {
+    background-color: #1c5dd4;
+    box-shadow: 0px 0px 1px rgb(241, 167, 29), 0px 0px 5px #1ac8f3, 0px 0px 0px 2px rgb(238, 43, 43);
+    border-radius: 15px;
+    transform: scale(1.1);
+    color: white;
+    font-weight: bold;
+  }
+
+  .buttonfield-adet .back-button-adet {
+    background: rgb(255, 162, 125);
+    height: 60px;
+    width: 340px;
+  }
+
+  /* Media Queries */
+
+@media only screen and (max-width: 480px) {
+    .container-adet {
+      margin-top: 100px;
+    }
+
+    .title-adet {
+      font-size: 40px;
+      display: none;
+    }
+
+    .input-group-adet .input-label-adet {
+        font-size: 15px;
+    }
+
+    .form-container-adet {
+      width: 70%;
+      margin-left: 10px;
+      margin-right: 0;
+      height: 100%;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .treatment-advice-box-adet {
+      margin-left: -10px;
+      width: 60%;
+      height: 0px;
+      font-size: 10px;
+    }
+
+    .buttons-adet {
+        flex-direction: row; /* Change the flex-direction to row */
+        justify-content: space-between; /* Add this property to distribute the buttons evenly */
+        margin-left: 30px;
+      }
+
+      .buttonfield-adet {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        flex: 1; /* Add flex: 1 to each buttonfield to distribute the available space equally */
+      }
+
+      .buttonfield-adet .back-button-adet {
+        width: auto; /* Set width to auto to adjust according to the content */
+        font-size: 15px;
+        height: 40px;
+      }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container-adet {
+      margin-top: 150px;
+    }
+
+    .title-adet {
+      font-size: 30px;
+        left: 200px;
+        top: 140px;
+    }
+
+    .form-container-adet {
+      width: 120%;
+      left: 70px;
+      margin-right: 0;
+      top: 70px;
+    }
+
+    .treatment-advice-box-adet {
+      margin-left: 10px;
+      width: 70%;
+    }
+
+    .input-group-adet .input-label-adet{
+        font-size: 15px;
+    }
+
+    .buttons-adet {
+      margin-left: 140px;
+      flex-wrap: wrap;
+    }
+
+    .buttonfield-adet {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .buttonfield-adet .back-button-adet {
+      width: 100%;
+      font-size: 20px;
+      height: 60px;
+      margin-top: 80px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container-adet {
+      margin-top: 250px;
+    }
+
+    .title-adet {
+      font-size: 60px;
+    }
+
+    .form-container-adet {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .treatment-advice-box-adet {
+      margin-left: 10px;
+      width: 90%;
+    }
+
+    .buttons-adet {
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+
+    .buttonfield-adet {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+
+    .buttonfield-adet .back-button-adet {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .container-adet {
+      margin-top: 350px;
+    }
+
+    .title-adet {
+      font-size: 70px;
+    }
+
+    .form-container-adet {
+      width: 207%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .treatment-advice-box-adet {
+      margin-left: 70px;
+      width: 70%;
+    }
+
+    .buttons-adet {
+      margin-left: 220px;
+      flex-wrap: nowrap;
+    }
+
+    .buttonfield-adet {
+      margin-left: 40px;
+      margin-bottom: 0;
+    }
+
+    .buttonfield-adet .back-button-adet {
+      width: 340px;
+    }
+  }

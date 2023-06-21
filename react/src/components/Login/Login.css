@@ -1,0 +1,194 @@
+.logbody {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../images/hospitalbg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+  .logo-l {
+    position: relative;
+    margin-top: 100px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: none;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .logo-l img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .register-link-l {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+  }
+
+  .title-l {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #000000,
+      0 0 42px rgb(255, 255, 255),
+      0 0 82px rgb(255, 255, 255),
+      0 0 102px rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .container-l {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('./images/hospitalbg.jpg');
+  background-size: cover;
+  overflow: hidden;
+  margin-top: -70px;
+}
+
+  .form-container-l {
+    margin-top: -20px;
+    border: 2px black solid;
+    padding: 0 130px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    width: 100%; /* Set the width to 100% */
+    box-sizing: border-box; /* Add this to include padding and border in the width */
+  }
+
+  .input-group-l {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .input-group-l #username {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .input-label-l {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+  }
+
+  .input-field-l {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .login-button-l {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: courier;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .centerbutton-l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .centerbutton-l .login-button-l:hover {
+    background-color: #1c5dd4;
+    box-shadow: 0px 0px 1px rgb(241, 167, 29), 0px 0px 5px #1ac8f3, 0px 0px 0px 2px rgb(238, 43, 43);
+    border-radius: 15px;
+    transform: scale(1.1);
+    color: white;
+    font-weight: bold;
+  }
+
+  .centerbutton-l .login-button-l {
+    background: rgb(255, 162, 125);
+    height: 60px;
+    width: 200px;
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 1240px) {
+    .container-l {
+      margin-top: -30px;
+    }
+
+    .title-l {
+      font-size: 30px;
+    }
+
+    .form-container-l {
+      padding: 0 40px;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+
+    .input-label-l {
+      font-size: 20px;
+    }
+
+    .input-field-l {
+      font-size: 14px;
+    }
+
+    .login-button-l {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .container-l {
+      margin-top: 10px;
+    }
+
+    .title-l {
+      font-size: 25px;
+    }
+
+    .form-container-l {
+      padding: 0 30px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .input-label-l {
+      font-size: 18px;
+    }
+
+    .input-field-l {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .login-button-l {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }

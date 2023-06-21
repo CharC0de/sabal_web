@@ -1,0 +1,329 @@
+.checkdet {
+  margin: 0;
+  padding-bottom: 50px; /* Add space of 50px below the entire page */
+  background-image: url('../../images/doc.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  width: 100vw;
+  height: 100vh;
+}
+
+.checkdet::-webkit-scrollbar {
+  width: 6px; /* Adjust the width of the scrollbar */
+}
+
+.checkdet::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Set the color of the scrollbar thumb */
+}
+
+.checkdet::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the color of the scrollbar track */
+}
+
+.container-chkdt {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  margin-left: 0; /* Set margin-left to 0 */
+}
+
+.content-container-chkdt {
+  margin-left: 70px; /* Add margin-left to move the content container to the left */
+  position: relative;
+  z-index: 1;
+}
+
+.logo-chkdt {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2; /* Increase the z-index to ensure the logo appears above other elements */
+}
+
+.logo-chkdt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain the aspect ratio and cover the entire area */
+}
+
+.logout-link-chkdt {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.title-chkdt {
+  position: absolute;
+  top: 170px; /* Adjust the positioning as needed */
+  left: 70px; /* Adjust the positioning as needed */
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #000000,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255);
+}
+
+.form-container-chkdt {
+  border: 2px black solid;
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative; /* Add position relative */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a background color to make the labels more visible */
+  z-index: 1; /* Set a higher z-index value */
+  width: 207%; /* Adjust the width of the form container */
+  margin-left: auto; /* Center the form container horizontally */
+  margin-right: auto; /* Center the form container horizontally */
+}
+
+.treatment-advice-box-chkdt {
+  border: 2px black solid;
+  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  width: 70%;
+}
+
+.input-group-chkdt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-label-chkdt {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input-group-chkdt #rec {
+  font-weight: bold;
+}
+
+.buttons-chkdt {
+  display: flex;
+  margin-left: 220px;
+}
+.back-button-chkdt {
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: courier;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonfield-chkdt {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonfield-chkdt .back-button-chkdt:hover{
+  background-color: #1c5dd4;
+  box-shadow: 0px 0px 1px rgb(241, 167, 29), 0px 0px 5px #1ac8f3, 0px 0px 0px 2px rgb(238, 43, 43);
+  border-radius: 15px;
+  transform: scale(1.1);
+  color:white;
+  font-weight: bold;
+}
+.buttonfield-chkdt .back-button-chkdt {
+  background: rgb(255, 162, 125);
+  height:60px;
+  width:340px;
+}
+
+@media (max-width: 1240px) {
+
+
+  /* Adjust margin-top for the container */
+  .container-chkdt {
+    margin-top: 200px;
+  }
+
+  /* Adjust width and margins for the form container */
+  .form-container-chkdt {
+    width: 200%;
+    margin-left: 100px;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+  .treatment-advice-box-chkdt {
+    width: 70%;
+    height: 20px;
+    padding-top: 20px;
+  }
+
+  /* Adjust margin-left for the content container */
+  .content-container-chkdt {
+    margin-left: 30px;
+  }
+
+  /* Adjust font size for the title */
+  .title-chkdt {
+    font-size: 40px;
+    display: none;
+  }
+
+  /* Adjust font size for the input labels */
+  .input-label-chkdt {
+    font-size: 20px;
+  }
+
+  .buttons-chkdt {
+    margin-left: 430px;
+    font-size: 10px;
+  }
+  /* Adjust margin-left for the buttonfield */
+  .buttonfield-chkdt {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  /* Adjust font size and dimensions for the back button */
+  .buttonfield-chkdt .back-button-chkdt {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Set background image to fixed and cover the entire screen */
+  .checkdet {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Other styles for smaller screens */
+}
+
+
+@media (max-width: 600px) {
+  /* Adjust margin-top for the container */
+  .container-chkdt {
+    margin-top: 200px;
+  }
+
+  /* Adjust width and margins for the form container */
+  .form-container-chkdt {
+    width: 110%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+  .treatment-advice-box-chkdt {
+    width: 40%;
+    height: 20px;
+    padding-top: 20px;
+  }
+
+  /* Adjust margin-left for the content container */
+  .content-container-chkdt {
+    margin-left: 30px;
+  }
+
+  /* Adjust font size for the title */
+  .title-chkdt {
+    font-size: 40px;
+    display: none;
+  }
+
+  /* Adjust font size for the input labels */
+  .input-label-chkdt {
+    font-size: 20px;
+  }
+
+  .buttons-chkdt {
+    margin-left: 60px;
+    font-size: 10px;
+  }
+  /* Adjust margin-left for the buttonfield */
+  .buttonfield-chkdt {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  /* Adjust font size and dimensions for the back button */
+  .buttonfield-chkdt .back-button-chkdt {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* Set background image to fixed and cover the entire screen */
+  .checkdet {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Other styles for smaller screens */
+}
+
+
+@media (max-width: 500px) {
+  /* Adjust margin-top for the container */
+  .container-chkdt {
+    margin-top: 150px;
+  }
+
+  /* Adjust margin-left for the content container */
+  .content-container-chkdt {
+    margin-left: 15px;
+  }
+
+  /* Adjust font size for the title */
+  .title-chkdt {
+    font-size: 30px;
+  }
+
+  /* Adjust font size for the input labels */
+  .input-label-chkdt {
+    font-size: 16px;
+  }
+
+  /* Adjust width and margins for the form container */
+  .form-container-chkdt {
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0 10px;
+  }
+  .treatment-advice-box-chkdt {
+    width: 30%;
+    height: 20px;
+    padding-top: 20px;
+  }
+
+  .buttons-chkdt {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  /* Adjust margin-left for the buttonfield */
+  .buttonfield-chkdt {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+
+  /* Adjust font size and dimensions for the back button */
+  .buttonfield-chkdt .back-button-chkdt {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+  }
+}

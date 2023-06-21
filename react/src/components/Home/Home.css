@@ -1,0 +1,359 @@
+.homeb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 50px; /* Add space of 50px below the entire page */
+  overflow: hidden; /* Disable scrolling */
+  background-image: url('../../images/doc.jpg');
+  background-size: cover;
+  background-position: top left; /* Align the background image to the top left corner */
+  background-attachment: fixed;
+}
+
+.container-homer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Set a minimum height to ensure the container takes up the full viewport height */
+}
+
+.logo-homer {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2; /* Increase the z-index to ensure the logo appears above other elements */
+}
+
+.logo-homer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain the aspect ratio and cover the entire area */
+}
+
+.logout-link-homer {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 30px;
+}
+
+.greeting-homer {
+  position: absolute;
+  top: 230px; /* Adjust the positioning as needed */
+  left: 70px; /* Adjust the positioning as needed */
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.navbar-homer {
+  top: -140px;
+  border: 2px black solid;
+  padding: 0 530px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+  position: relative; /* Add position relative */
+  z-index: 2; /* Increase the z-index to ensure the navbar appears above other elements */
+}
+
+.navbar-link-homer {
+  font-weight: bold;
+  margin: 0 40px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.title-homer {
+  top: 130px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #000000,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 255, 255),
+    0 0 102px rgb(255, 255, 255);
+}
+
+.form-container-homer {
+  border: 2px black solid;
+  padding: 0 110px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative; /* Add position relative */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a background color to make the labels more visible */
+  z-index: 1; /* Set a higher z-index value */
+}
+
+.reg-button-homer {
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: courier;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonfield-homer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonfield-homer .reg-button-homer:hover{
+  background-color: #1c5dd4;
+  box-shadow: 0px 0px 1px rgb(241, 167, 29), 0px 0px 5px #1ac8f3, 0px 0px 0px 2px rgb(238, 43, 43);
+  border-radius: 15px;
+  transform: scale(1.1);
+  color:white;
+  font-weight: bold;
+}
+
+.buttonfield-homer .reg-button-homer {
+  background: rgb(255, 162, 125);
+  height:60px;
+  width:350px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1240px) and (max-height: 800px) {
+  html,
+  .homeb {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .logo-homer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logout-link-homer {
+    top: 40px;
+    font-size: 30px;
+  }
+
+  .navbar-homer {
+    top: -50px;
+    border: 2px black thin;
+  }
+
+  .navbar-link-homer {
+    font-size: 20px;
+  }
+
+   .container-homer {
+    margin-top: 30px;
+  }
+
+  .title-homer {
+    margin-top: 70px;
+    font-size: 35px;
+  }
+
+  .form-container-homer {
+    padding: 0 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .input-label-homer {
+    font-size: 20px;
+  }
+
+  .input-field-homer {
+    width: 250px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .reg-button-homer {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) and (max-height: 800px) {
+
+  .logo-homer {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logout-link-homer {
+    top: 30px;
+    font-size: 20px;
+  }
+
+  .navbar-homer {
+    top: -220px;
+    border: 2px black thin;
+  }
+
+  .navbar-link-homer {
+    font-size: 15px;
+  }
+
+  .greeting-homer {
+    top: 190px;
+    font-size: 30px;
+    left: 160px;
+    display: none;
+  }
+
+  .title-homer {
+    margin-top: -100px;
+    font-size: 30px;
+  }
+
+  .form-container-homer {
+    padding: 0 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .buttonfield-homer .reg-button-homer {
+    width: 200px;
+    height: 50px;
+  }
+
+  .reg-button-homer {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) and (max-height: 800px) {
+  html,
+  .homeb {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .greeting-homer {
+    margin-right: 320px;
+    top: -190px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .container-homer {
+    margin-top: 10px;
+  }
+
+  .title-homer {
+    margin-top: -190px;
+    font-size: 25px;
+  }
+
+  .form-container-homer {
+    padding: 0 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .input-label-homer {
+    font-size: 18px;
+  }
+
+  .input-field-homer {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .reg-button-homer {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) and (min-height: 300px) {
+  html,
+  .homeb {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .navbar-homer {
+    top: -180px;
+  }
+
+  .navbar-link-homer {
+    font-size: 10px;
+  }
+
+  .logout-link-homer {
+    left: 250px;
+  }
+
+  .greeting-homer {
+    top: -100px;
+    font-size: 20px;
+    left: 170px;
+  }
+
+  .container-homer {
+    margin-top: 10px;
+  }
+
+  .title-homer {
+    margin-top: -80px;
+    font-size: 20px;
+  }
+
+  .form-container-homer {
+    padding: 0 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .input-label-homer {
+    font-size: 18px;
+  }
+
+  .input-field-homer {
+    width: 200px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .reg-button-homer {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
+@media  (min-height: 815px) {
+
+    .greeting-homer {
+      display: none;
+    }
+
+}
+
+@media  (max-height: 653px) {
+
+  .greeting-homer {
+    display: none;
+  }
+}
